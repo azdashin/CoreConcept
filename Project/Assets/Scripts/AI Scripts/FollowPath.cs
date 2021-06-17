@@ -43,7 +43,7 @@ public class FollowPath : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (g.getPathLength() == 0 || currentWP == g.getPathLength()) 
+        if (g.getPathLength() == 0 || currentWP == g.getPathLength())
         {
             return;
         }

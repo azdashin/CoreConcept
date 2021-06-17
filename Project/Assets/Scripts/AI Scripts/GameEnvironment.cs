@@ -9,6 +9,7 @@ public sealed class GameEnvironment
     private List<GameObject> checkpoints = new List<GameObject>();
     public List<GameObject> Checkpoints { get { return checkpoints; } }
 
+    public string tagName;
     public static GameEnvironment Singleton 
     {
         get 

@@ -11,6 +11,10 @@ public class AI : MonoBehaviour
     State currentState;
 
     public bool chasePlayer;
+    public bool isAGuard;
+    public bool isAZombie;
+
+    public string checkpointName;
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +29,8 @@ public class AI : MonoBehaviour
     {
         currentState = currentState.Process();
         currentState.isChaser = chasePlayer;
+        currentState.isGuard = isAGuard;
+        currentState.isZombie = isAZombie;
+
     }
 }
